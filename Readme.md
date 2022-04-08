@@ -62,3 +62,16 @@ OPTIONS:
    --role value                    role of the new user (default: "network-admin")
    --help, -h                      show help (default: false)
 ```
+
+## Build instructions
+
+### Without source
+
+- Install golang [https://go.dev/doc/install](https://go.dev/doc/install)
+- `go install github.com/firefart/cisco-snmp-pwner@latest`
+
+### From source
+
+- Install golang [https://go.dev/doc/install](https://go.dev/doc/install)
+- `go get`
+- `make` or `go build -o cisco-snmp-pwner`
