@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/pin/tftp v2.1.0+incompatible
 	github.com/sirupsen/logrus v1.8.1
-	github.com/urfave/cli/v2 v2.4.0
+	github.com/urfave/cli/v2 v2.4.8
 )
 
 require (
