@@ -6,7 +6,7 @@ require (
 	github.com/gosnmp/gosnmp v1.37.0
 	github.com/pin/tftp v2.1.0+incompatible
 	github.com/sirupsen/logrus v1.9.3
-	github.com/urfave/cli/v2 v2.25.7
+	github.com/urfave/cli/v2 v2.26.0
 )
 
 require (
