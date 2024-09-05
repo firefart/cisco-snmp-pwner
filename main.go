@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math/rand"
 	"os"
 	"time"
 
@@ -13,13 +12,7 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-var (
-	log *logrus.Logger
-)
-
-func init() {
-	rand.Seed(time.Now().UnixNano())
-}
+var log *logrus.Logger
 
 type options struct {
 	debug           bool

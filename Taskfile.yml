@@ -1,0 +1,54 @@
+version: "3"
+
+vars:
+  PROGRAM: cisco-snmp-pwner
+
+tasks:
+  deps:
+    cmds:
+      - go mod tidy -v
+
+  update:
+    cmds:
+      - go get -u
+      - go mod tidy -v
+
+  setup:
+    cmds:
+      - go install mvdan.cc/gofumpt@latest
+
+  build:
+    aliases: [default]
+    deps: [deps]
+    env:
+      CGO_ENABLED: 0
+    cmds:
+      - go fmt ./...
+      - gofumpt -l -w .
+      - go vet ./...
+      - go build -o {{.PROGRAM}}
+
+  test:
+    deps: [deps]
+    env:
+      CGO_ENABLED: 1 # required by -race
+    cmds:
+      - go test -race -cover ./...
+
+  run:
+    deps: [build]
+    cmds:
+      - ./{{.PROGRAM}}
+
+  lint:
+    cmds:
+      - golangci-lint run ./... --timeout=30m
+      - go mod tidy
+
+  lint-update:
+    cmds:
+      - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b {{ .GOPATH }}/bin
+      - golangci-lint --version
+    vars:
+      GOPATH:
+        sh: go env GOPATH

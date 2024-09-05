@@ -35,7 +35,7 @@ func (t tftpStuff) writeHandler(filenameRaw string, wt io.WriterTo) error {
 	}
 	filename = fmt.Sprintf("%s_%s", filename, randomString(5))
 
-	file, err := os.OpenFile(filename, os.O_WRONLY|os.O_CREATE|os.O_EXCL, 0644)
+	file, err := os.OpenFile(filename, os.O_WRONLY|os.O_CREATE|os.O_EXCL, 0o644)
 	if err != nil {
 		log.Errorf("%v", err)
 		return err
