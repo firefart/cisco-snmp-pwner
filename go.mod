@@ -1,6 +1,6 @@
 module github.com/firefart/cisco-snmp-pwner
 
-go 1.23
+go 1.24
 
 require (
 	github.com/gosnmp/gosnmp v1.38.0
