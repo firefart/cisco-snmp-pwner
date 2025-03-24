@@ -259,7 +259,7 @@ func run(mode mode, options options) error {
 			case "NoAuth":
 				v3AuthProto = g.NoAuth
 			default:
-				return fmt.Errorf("Invalid value for authproto: %s", options.v3AuthProto)
+				return fmt.Errorf("invalid value for authproto: %s", options.v3AuthProto)
 			}
 
 			switch options.v3PrivProto {
@@ -278,7 +278,7 @@ func run(mode mode, options options) error {
 			case "AES256C":
 				v3PrivProto = g.AES256C
 			default:
-				return fmt.Errorf("Invalid value for privproto: %s", options.v3PrivProto)
+				return fmt.Errorf("invalid value for privproto: %s", options.v3PrivProto)
 			}
 
 			params = g.GoSNMP{
@@ -299,7 +299,7 @@ func run(mode mode, options options) error {
 				},
 			}
 		default:
-			return fmt.Errorf("Invalid snmp version %s", options.version)
+			return fmt.Errorf("invalid snmp version %s", options.version)
 		}
 
 		if err := sendSNMPCommand(mode, &params, options.listen, fmt.Sprintf("dump_%s", target)); err != nil {

@@ -93,7 +93,7 @@ func getStatusRequest(randomID string) []string {
 	return []string{fmt.Sprintf("%s.10.%s", ciscoConfigMib, randomID)} // http://www.circitor.fr/Mibs/Html/C/CISCO-CONFIG-COPY-MIB.php#ccCopyState
 }
 
-// nolint:deadcode,unused
+// nolint:unused
 func getFailReasonRequest(randomID string) []string {
 	return []string{fmt.Sprintf("%s.13.%s", ciscoConfigMib, randomID)} // http://www.circitor.fr/Mibs/Html/C/CISCO-CONFIG-COPY-MIB.php#ccCopyFailCause
 }
