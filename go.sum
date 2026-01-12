@@ -3,8 +3,8 @@ github.com/cpuguy83/go-md2man/v2 v2.0.7/go.mod h1:oOW0eioCTA6cOiMLiUPZOpcVxMig6N
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/gosnmp/gosnmp v1.43.1 h1:7wsShHqUxP7BPAv3AkGA+PyZBknrJktN0R+yxtlJSog=
-github.com/gosnmp/gosnmp v1.43.1/go.mod h1:MQJo+kP0Ka2n1lkOL44ZgNkz3dBcDxtfgx5/hpkXMKE=
+github.com/gosnmp/gosnmp v1.43.2 h1:F9loz6uMCNtIQj0RNO5wz/mZ+FZt2WyNKJYOvw+Zosw=
+github.com/gosnmp/gosnmp v1.43.2/go.mod h1:smHIwoaqr1M+HTAEd7+mKkPs8lp3Lf/U+htPUql1Q3c=
 github.com/pin/tftp v2.1.0+incompatible h1:Yng4J7jv6lOc6IF4XoB5mnd3P7ZrF60XQq+my3FAMus=
 github.com/pin/tftp v2.1.0+incompatible/go.mod h1:xVpZOMCXTy+A5QMjEVN0Glwa1sUvaJhFXbr/aAxuxGY=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

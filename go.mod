@@ -3,7 +3,7 @@ module github.com/firefart/cisco-snmp-pwner
 go 1.25
 
 require (
-	github.com/gosnmp/gosnmp v1.43.1
+	github.com/gosnmp/gosnmp v1.43.2
 	github.com/pin/tftp v2.1.0+incompatible
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.7
